@@ -1,8 +1,29 @@
 # Using Sanitizers
 
+> Twas brillig, and the slithy toves <br>
+>  Did gyre and gimble in the wabe:<br>
+> All mimsy were the borogoves,<br>
+> And the mome raths outgrabe.
+
+---
+
+# Using Sanitizers
+
+> A Jabberwocky sentence is a sentence which uses correct grammar and syntax but contains nonsense words, rendering it semantically meaningless.
+
+
 ---
 
 # What are the Sanitizers?
+
+The sanitizers make sure that your grammar and syntax in correct in the view of your hardware.
+
+They are of no use in rendering your code semantically meaningful.
+
+
+---
+
+# List of Sanitizers
 
  - AddressSanitizer
  - MemorySanitizer
@@ -349,3 +370,4 @@ int d = *p;
 $ make clean && make UB=1 && ./ubsan_go_boom.x
 ubsan_go_boom.cpp:38:11: runtime error: load of null pointer of type 'int'
 ```
+
